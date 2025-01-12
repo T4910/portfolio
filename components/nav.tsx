@@ -5,6 +5,7 @@ import { ThemeSwitch } from "./theme-switch";
 const navItems = {
   "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
+  "/resume": { name: "Resume" },
   "/photos": { name: "Photos" },
 };
 

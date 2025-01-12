@@ -1,8 +1,10 @@
 "use client";
-
 import { metaData, socialLinks } from "app/config";
+import { Download } from "lucide-react";
+import { useRouter } from 'next/navigation';
 import React from "react";
 import {
+  FaDownload,
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
@@ -32,13 +34,17 @@ function SocialLinks() {
       <a href="/rss.xml" target="_self">
         <FaRss />
       </a>
+      <a href={`/resume`} target="_self">
+        <FaDownload />
+      </a>
+
     </div>
   );
 }
 
 export default function Footer() {
   return (
-    <small className="flex justify-between flex-wrap-reverse gap-x-4 gap-y-2 lg:mt-20 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
+    <small className="flex justify-between flex-wrap-reverse gap-x-4 gap-y-2 lg:mt-16 mt-12 text-[#1C1C1C] dark:text-[#D4D4D4]">
       <div className="inline-block">
         <time>© {YEAR}</time>{" "}
         <a
