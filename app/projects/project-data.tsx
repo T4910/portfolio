@@ -7,24 +7,45 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    year: 2023,
+    title: "FoodDelivery",
+    year: 2024,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "A Nextjs project I made after learning Nextjs, Tailwindcss, and Database integration with Prisma",
+    url: "https://food-delivery-rust-one.vercel.app/",
   },
   {
-    title: "Project Two",
+    title: "NextAuth Authentication with Nextjs",
+    year: 2024,
+    description:
+    "A project I used to learn how to use NextAuth for authentication & authorization in Nextjs",
+    url: "https://nextjs-auth-fawn.vercel.app/",
+  },
+  {
+    title: "Tubelearn",
     year: 2022,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "A hackathon project I worked on with some fellow developers. It's an e-learning platform. I was mostly involved in the backend, but later migrated the entire codebase to Nextjs",
+    url: "https://tubelearn.vercel.app/",
   },
   {
-    title: "Project Three",
-    year: 2021,
+    title: "TradeUp",
+    year: 2022,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "Literally just a fun little project when I started web dev",
+    url: "https://trading-up.vercel.app/",
+  },
+  {
+    title: "Landmark University Evangelism website",
+    year: 2023,
+    description:
+      "A showcase website for Landmark Univeristy Evangelism Unit",
+    url: "https://lueg.vercel.app/",
+  },
+  {
+    title: "GHM website",
+    year: 2025,
+    description:
+      "A website for showcasing GHM & contain critical software for managing GHM activities",
+    url: "https://ghm.lmu.edu.ng",
   },
 ];

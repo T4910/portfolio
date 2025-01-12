@@ -1,5 +1,5 @@
-import React from "react";
 import type { Metadata } from "next";
+import React from "react";
 import { projects } from "./project-data";
 
 export const metadata: Metadata = {
@@ -11,8 +11,8 @@ export default function Projects() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
-      <div className="space-y-6">
-        {projects.map((project, index) => (
+      <div className="space-y-8">
+        {projects.sort((a, b) => b.year - a.year).map((project, index) => (
           <a
             key={index}
             href={project.url}
@@ -29,7 +29,7 @@ export default function Projects() {
                   {project.year}
                 </span>
               </div>
-              <p className="prose prose-neutral dark:prose-invert pt-3">
+              <p className="prose prose-neutral dark:prose-invert pt-0.5">
                 {project.description}
               </p>
             </div>
