@@ -41,6 +41,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                     sizes="(max-width: 768px) 50vw, 33vw"
                     priority
                     className="rounded-lg object-cover"
+                    // placeholder="blur"
                   />
                 </a>
               ) : (
