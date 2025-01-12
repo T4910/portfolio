@@ -1,13 +1,13 @@
-import "./global.css";
-import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
-import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-switch";
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import type { Metadata } from "next";
+import Footer from "../components/footer";
+import { Navbar } from "../components/nav";
+import { ThemeProvider } from "../components/theme-switch";
 import { metaData } from "./config";
+import "./global.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
@@ -74,7 +74,7 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 max-sm:mb-8">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
