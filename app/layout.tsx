@@ -74,7 +74,7 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 max-sm:mb-8">
+      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 max-sm:mb-8 pb-4">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
