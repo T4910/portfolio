@@ -1,4 +1,4 @@
-import { formatDate, getBlogPosts } from "app/lib/posts";
+import { formatDate, getBlogPosts } from "@/lib/posts";
 import Link from "next/link";
 
 export const metadata = {

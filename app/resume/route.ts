@@ -1,4 +1,3 @@
-// pages/api/download.js
 import fs from "fs";
 import { redirect } from "next/navigation";
 import { NextResponse } from "next/server";
