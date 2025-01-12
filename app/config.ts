@@ -8,9 +8,9 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  twitter: "https://x.com/",
+  twitter: "https://x.com/ttaiwo4910",
   github: "https://github.com/T4910",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
+  instagram: "https://www.instagram.com/emoyoyo",
+  linkedin: "https://www.linkedin.com/in/emma-taiwo/",
   email: "mailto:ttaiwo4910@gmail.com",
 };
