@@ -1,15 +1,15 @@
 "use client";
 
+import { metaData, socialLinks } from "app/config";
 import React from "react";
 import {
-  FaXTwitter,
   FaGithub,
   FaInstagram,
-  FaRss,
   FaLinkedinIn,
+  FaRss,
+  FaXTwitter,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
-import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
 
@@ -38,24 +38,26 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <small className="block lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
-      <time>© {YEAR}</time>{" "}
-      <a
-        className="no-underline"
-        href={socialLinks.twitter}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {metaData.title}
-      </a>
-      <style jsx>{`
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
+    <small className="flex justify-between flex-wrap-reverse gap-x-4 gap-y-2 lg:mt-20 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
+      <div className="inline-block">
+        <time>© {YEAR}</time>{" "}
+        <a
+          className="no-underline"
+          href={socialLinks.twitter}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {metaData.title}
+        </a>
+        <style jsx>{`
+          @media screen and (max-width: 480px) {
+            article {
+              padding-top: 2rem;
+              padding-bottom: 4rem;
+            }
           }
-        }
-      `}</style>
+        `}</style>
+      </div>
       <SocialLinks />
     </small>
   );

@@ -1,5 +1,6 @@
-import React from "react";
+import BlurFade from "@/components/ui/blur-fade";
 import Image from "next/image";
+import React from "react";
 
 interface ImageGridProps {
   images: {
@@ -24,14 +25,25 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
     <section>
       <div className={`grid ${gridClass} gap-4 my-8`}>
         {images.map((image, index) => (
-          <div key={index} className="relative aspect-square">
-            {image.href ? (
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={image.href}
-                className="block w-full h-full"
-              >
+          <BlurFade delay={0.25} key={index} inView>
+            <div key={index} className="relative aspect-square">
+              {image.href ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={image.href}
+                  className="block w-full h-full"
+                >
+                  <Image
+                    alt={image.alt}
+                    src={image.src}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    priority
+                    className="rounded-lg object-cover"
+                  />
+                </a>
+              ) : (
                 <Image
                   alt={image.alt}
                   src={image.src}
@@ -40,18 +52,9 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                   priority
                   className="rounded-lg object-cover"
                 />
-              </a>
-            ) : (
-              <Image
-                alt={image.alt}
-                src={image.src}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                priority
-                className="rounded-lg object-cover"
-              />
-            )}
-          </div>
+              )}
+            </div>
+          </BlurFade>
         ))}
       </div>
     </section>
