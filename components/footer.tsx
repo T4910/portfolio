@@ -34,7 +34,7 @@ function SocialLinks() {
       <a href="/rss.xml" target="_self">
         <FaRss />
       </a>
-      <a href={`/resume`} target="_self">
+      <a href={`/resume`} download>
         <FaDownload />
       </a>
 

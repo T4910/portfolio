@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { metaData } from "../app/config";
+import Resume from "./dowload";
 import { ThemeSwitch } from "./theme-switch";
 
 const navItems = {
   "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
-  "/resume": { name: "Resume" },
-  "/photos": { name: "Photos" },
+  // "/resume": { name: "Resume" },
+  // "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
@@ -28,6 +29,7 @@ export function Navbar() {
               {name}
             </Link>
           ))}
+          <Resume />
           <ThemeSwitch />
         </div>
       </div>
