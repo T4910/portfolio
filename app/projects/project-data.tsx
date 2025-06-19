@@ -6,7 +6,7 @@ export interface TProject {
   priority?: number; // Optional field for priority
 }
 
-export const projects: Project[] = [
+export const projects: TProject[] = [
   {
     title: "FoodDelivery",
     year: 2024,
