@@ -6,7 +6,7 @@ import { ThemeSwitch } from "./theme-switch";
 const navItems = {
   "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
-  // "/resume": { name: "Resume" },
+  "/resume": { name: "Resume" },
   // "/photos": { name: "Photos" },
 };
 
@@ -29,7 +29,7 @@ export function Navbar() {
               {name}
             </Link>
           ))}
-          <Resume />
+          {/* <Resume /> */}
           <ThemeSwitch />
         </div>
       </div>
