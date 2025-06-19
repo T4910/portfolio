@@ -4,7 +4,7 @@ import Resume from "./dowload";
 import { ThemeSwitch } from "./theme-switch";
 
 const navItems = {
-  "/blog": { name: "Blog" },
+  // "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
   "/resume": { name: "Resume" },
   // "/photos": { name: "Photos" },
