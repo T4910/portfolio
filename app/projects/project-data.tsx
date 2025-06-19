@@ -1,8 +1,9 @@
-export interface Project {
+export interface TProject {
   title: string;
   year: number;
   description: string;
   url: string;
+  priority?: number; // Optional field for priority
 }
 
 export const projects: Project[] = [
@@ -45,6 +46,7 @@ export const projects: Project[] = [
     description:
       "A website for GHM, featuring critical software for managing organizational activities. Currently under development.",
     url: "https://ghm-ashen.vercel.app/",
+    priority: 4, // High priority project
   },
   {
     title: "Oxygen loaning platform",
@@ -59,6 +61,8 @@ export const projects: Project[] = [
     description:
       "A complete website revamp for Walls & Gates Limited during my internship.",
     url: "https://wandggroup.com/",
+    priority: 1, // High priority project
+
   },
   {
     title: "Realyze Real Estate Platform",
@@ -66,6 +70,7 @@ export const projects: Project[] = [
     description:
       "A real estate platform with an AI agent to assist users in finding homes. Built for the DevTo Brightdata Hackathon using TanStack Router, TanStack Query, and Django Rest Framework.",
     url: "https://realyze.floo.com.ng/",
+    priority: 2, // Medium priority project
   },
   {
     title: "Task Management Platform",
@@ -73,5 +78,6 @@ export const projects: Project[] = [
     description:
       "A platform for managing tasks and projects, built with Next.js (frontend) and Hono.js (backend on Cloudflare Workers) for a job interview.",
     url: "https://social-inbox-frontend.vercel.app/",
+    priority: 3, // Low priority project
   },
 ];
