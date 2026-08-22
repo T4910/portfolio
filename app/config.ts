@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: "https://emmataiwo.me",
+  baseUrl: "https://codej.tech",
   title: "Emmanuel's Portfolio",
   name: "Taiwo Emmanuel",
   ogImage: "/opengraph-image.png",
@@ -10,7 +10,7 @@ export const metaData = {
 export const socialLinks = {
   twitter: "https://x.com/ttaiwo4910",
   github: "https://github.com/T4910",
-  instagram: "https://www.instagram.com/emoyoyo",
+  instagram: "https://www.instagram.com/_code.j",
   linkedin: "https://www.linkedin.com/in/emma-taiwo/",
   email: "mailto:ttaiwo4910@gmail.com",
 };
