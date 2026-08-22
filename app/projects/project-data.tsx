@@ -41,12 +41,12 @@ export const projects: TProject[] = [
     url: "https://lueg.vercel.app/",
   },
   {
-    title: "GHM website",
-    year: 2025,
+    title: "GHM Unit Management applicaation",
+    year: 2026,
     description:
-      "A website for GHM, featuring critical software for managing organizational activities. Currently under development.",
-    url: "https://ghm-ashen.vercel.app/",
-    priority: 4, // High priority project
+      "A website for GHM, featuring critical software for managing organizational activities.",
+    url: "https://ghm.lmu.edu.ng/",
+    priority: 6, // High priority project
   },
   {
     title: "Oxygen loaning platform",
@@ -61,7 +61,16 @@ export const projects: TProject[] = [
     description:
       "A complete website revamp for Walls & Gates Limited during my internship.",
     url: "https://wandggroup.com/",
-    priority: 1, // High priority project
+    priority: 5, // High priority project
+
+  },
+  {
+    title: "The Content Factory website",
+    year: 2025,
+    description:
+      "Content Factory is an on-demand creative platform providing affordable, agency-quality content production with predictable turnaround for startups and SMEs.",
+    url: "https://tcf.wandggroup.com/",
+    priority: 4, // High priority project
 
   },
   {
@@ -70,7 +79,7 @@ export const projects: TProject[] = [
     description:
       "A real estate platform with an AI agent to assist users in finding homes. Built for the DevTo Brightdata Hackathon using TanStack Router, TanStack Query, and Django Rest Framework.",
     url: "https://realyze.floo.com.ng/",
-    priority: 2, // Medium priority project
+    priority: 7, // Medium priority project
   },
   {
     title: "Task Management Platform",
@@ -78,6 +87,29 @@ export const projects: TProject[] = [
     description:
       "A platform for managing tasks and projects, built with Next.js (frontend) and Hono.js (backend on Cloudflare Workers) for a job interview.",
     url: "https://social-inbox-frontend.vercel.app/",
-    priority: 3, // Low priority project
+    priority: 8, // Low priority project
+  },
+  {
+    title: "ZeroCancer",
+    year: 2025,
+    description:
+      "A healthcare platform designed to support cancer awareness, screening, donation management through a centralized digital system.",
+    url: "https://zerocancer.ttaiwo4910.workers.dev/",
+    priority: 3, 
+  },
+  {
+    title: "GE-MART",
+    year: 2026,
+    description:
+      "Built an escrow-based e-commerce marketplace for peer-to-peer tech sales, implementing secure transaction workflows that hold buyer payments until product delivery and verification.",
+    url: "https://ge-mart.com/",
+    priority: 1, 
+  },
+  {
+    title: "Popin",
+    year: 2026,
+    description: "PopIn is a unified marketplace for discovering, booking, and managing events, short-term stays, and vehicle rentals, connecting users with verified service providers through a secure, integrated booking and payment platform.",
+    url: "#",
+    priority: 2, // Low priority project
   },
 ];
